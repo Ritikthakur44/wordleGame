@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wordle Game</title>
+</head>
+<body>
+    <h1>Wordle Game</h1>
+    <p>Hint: {{ hint }}</p>
+    <p>Attempts left: {{ attempts }}</p>
+    <form method="POST">
+        <input type="text" name="guess" required>
+        <input type="submit" value="Guess">
+    </form>
+    <p>{{ message }}</p>
+    <p>{{ result|safe }}</p>
+</body>
+</html>
